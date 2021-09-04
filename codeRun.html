@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CodeRun by Azeez</title>
+
+<link rel="stylesheet" href="codeRun.css">
+
+</head>
+
+<body>
+
+	<header id="headerEl">
+    	<h1>CodeRun editor by Azeez <a href="#" id="optionDots" title="Options" onclick="$('.aside').asidebar('open')">&#8942</a></h1>
+    	<nav id="navLst">
+        	<ul>
+                <li id="htmlBt" class="activated"><a href="#">HTML</a></li><li id="cssBt" class="activated"><a href="#">CSS</a></li><li id="jsBt" class="activated"><a href="#">JS</a></li><li id="resultBt" class="activated"><a href="#">Result</a></li>      
+          	</ul>
+        </nav>
+        <div id="runDiv"><a id="runAnchor" title="Ctrl + Enter" href="#">Run</a></div>
+    </header>
+
+	<div class="aside">
+  		<div class="aside-header">
+    		Options
+    	<span class="close" data-dismiss="aside" aria-hidden="true">&times;</span>
+  		</div>
+  		<div class="aside-contents">
+    		<p>Code font size</p>
+			<ul>
+				<li><a href="#" id="smallF">&darr; Small</a></li>
+				<li><a href="#" id="normalF">&rarr; Normal</a></li>
+				<li><a href="#" id="bigF">&uarr; Big</a></li>
+			</ul>
+  		</div>
+	</div>
+
+	<div class="aside-backdrop"></div>
+    
+	<section id="sectCode">
+    	
+        <article id="htmlA">
+        	<h4>HTML</h4>
+        	<textarea class="tabIndent textareaCode" id="htmlI"></textarea>
+        </article>
+        
+    	<article id="cssA">
+       		<h4>CSS</h4>
+        	<textarea class="tabIndent textareaCode" id="cssI"></textarea>
+        </article>
+        
+        <article id="jsA">
+        	<h4>JS</h4>
+        	<textarea class="tabIndent textareaCode" id="jsI"></textarea>
+        </article>
+        
+        <article id="resultA">
+        	<h4>Result</h4>
+        </article>
+    </section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="asidebar.jquery.js"></script>
+	<script src="tabIndent.js"></script>
+	<script type="text/javascript" src="codeRun.js"></script>
+	
+</body>
+</html>
